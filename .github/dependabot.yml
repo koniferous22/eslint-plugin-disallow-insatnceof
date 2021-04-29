@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: eslint
+    versions:
+    - 7.24.0
+    - 7.25.0
+  - dependency-name: ts-jest
+    versions:
+    - 26.5.5
+  - dependency-name: "@types/eslint"
+    versions:
+    - 7.2.10
+    - 7.2.9
